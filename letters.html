@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090719">
+  <title>SKYEE | Send a Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">
+      SKYEE<span>.SAYS.BYEE</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="meets.html">CAR MEETS</a>
+      <a href="links.html">LINKS</a>
+      <a href="letters.html" aria-current="page">LETTERS</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-heading">
+    <div class="container">
+
+      <div class="eyebrow">
+        04 / INCOMING TRANSMISSION
+      </div>
+
+      <h1>
+        SEND A <span class="cyan">LETTER.</span>
+      </h1>
+
+      <p>
+        Questions, stories, collaboration ideas,
+        or just something you want to say.
+        I'm listening.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <form
+        class="contact-form"
+        id="letterForm"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST">
+
+        <label for="senderName">YOUR NAME</label>
+
+        <input
+          id="senderName"
+          type="text"
+          name="name"
+          placeholder="What should I call you?"
+          maxlength="100"
+          required>
+
+        <label for="senderEmail">
+          YOUR EMAIL (OPTIONAL)
+        </label>
+
+        <input
+          id="senderEmail"
+          type="email"
+          name="email"
+          placeholder="Only if you want a reply">
+
+        <label for="letter">YOUR LETTER</label>
+
+        <textarea
+          id="letter"
+          name="message"
+          maxlength="5000"
+          placeholder="Write whatever's on your mind..."
+          required></textarea>
+
+        <button class="btn primary" type="submit">
+          SEND TRANSMISSION ↗
+        </button>
+
+        <p class="notice" id="formNotice">
+          Messages are processed by Formspree.
+          Your receiving email address does not
+          appear in the page source.
+        </p>
+
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © <span data-year></span>
+  SKYEE.SAYS.BYEE / BUILT FOR THE LONG WAY HOME
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
